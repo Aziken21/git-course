@@ -1,0 +1,6 @@
+.product {
+
+    /* что нельзя писать */
+    margin: 10px;
+    position: absolute;
+}

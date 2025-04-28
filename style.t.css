@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&display=swap');
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../font/montserrat-regular-webfont.woff2') format ('woff2'),
+            url('../font/montserrat-regular-webfont.woff') format ('woff'),
+            url('../font/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}   
+
+.fontlist {
+    list-style: none;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+}
+.size {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
+}
+
+.simple {
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: normal;
+    /* text-decoration: line-through; */
+    letter-spacing: 1px ;
+    text-shadow: red 0 0 10px;
+    text-transform: lowercase;
+}
+
+.complex {
+    font-size: 20px;
+}
+
+.complex span{
+font-size: 1.5em;
+}
+

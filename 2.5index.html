@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      meter {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .process-container {
+        width: 300px;
+        height: 10px;
+        background-color: gray;
+        border-color: 5px;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+
+      .progress-content {
+        height: 100%;
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form oninput="result.value=myRange.value">
+      <input
+        type="range"
+        name="myRange"
+        id="myRange"
+        step="2"
+        min="0"
+        max="10"
+        value="0"
+      />
+
+      <output name="result" for="myRange">0</output>
+
+      <progress name="result2" for="myRange" max="10" vallue="4"></progress>
+      <meter
+        min="0"
+        max="100"
+        low="33"
+        high="66"
+        optimum="80"
+        value="66"
+      ></meter>
+
+      <progress name="result3" for="myRange" max="10" vallue="4"></progress>
+
+      <div class="progress-container">
+        <div class="progress-content" style="width: 25%"></div>
+      </div>
+    </form>
+  </body>
+</html>

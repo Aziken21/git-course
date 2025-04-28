@@ -1,0 +1,49 @@
+body {
+    background-image: url(../img/fon.jpg);
+    margin: 0;
+}
+
+
+.product-item {
+    background-color: coral; 
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0px 0 50px;
+    height: 100vh;
+}
+
+.product-item:first-child{
+    background: url(../img/pic01.jpg) no-repeat, url(../img/pic01.jpg) no-repeat;
+    background-position: top center, bottom center;
+    background-color: coral;
+
+    background-size: 500px, 300px;
+}
+
+.product-item:nth-child(2) {
+    background: url(../img/pic01.jpg) no-repeat;
+    background-size: cover;
+    background-color: coral;
+    background-position: right top;
+    background-attachment: fixed;
+    background-blend-mode:difference;
+}
+
+.product-item__title {
+
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+
+     
+
+    margin: 10px auto;
+
+    padding: 10px 15px;
+
+
+}
+
+.product-item__description {
+
+}

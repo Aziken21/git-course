@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form patterns</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid;
+        border-color: black;
+      }
+
+      input:invalid {
+        border-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label>
+        Фамилия
+        <input
+          type="text"
+          pattern="^([А-Яя-я]+)$"
+          autocomplete="off"
+          placeholder="Иванов"
+        />
+      </label>
+      <label>
+        email
+        <input
+          type="email"
+          pattern="(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)"
+          autocomplete="off"
+          placeholder="email"
+        />
+      </label>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

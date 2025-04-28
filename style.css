@@ -1,0 +1,18 @@
+h2 {
+    text-transform: uppercase;
+    color: rgb(66, 135, 245);
+    text-align: left;
+}
+div p {
+    font-style: italic ;
+}
+
+p {
+    text-align: left;
+}
+.brown {
+    color: brown;
+}
+#heading {
+    border-bottom: 1px  solid #000
+}

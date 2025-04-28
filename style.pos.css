@@ -1,0 +1,45 @@
+#parent {
+    position: relative;
+    top: 100px;
+    width: 300px;
+    height: 200px;
+    background: #29cc59;
+}
+
+#parent:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 20px);
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid;
+    border-color: transparent transparent transparent black;
+}
+
+#child {
+    width: 100px;
+    height: 100px;
+    background: #cc5317;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+#fixed {
+    width: 100px;
+    height: 100px;
+    background: #716ccc;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: auto;
+}
+
+#sticky {
+    width: 100px;
+    height: 100px;
+    background: #ccc716;
+    position: sticky;
+    top: 40px;
+}

@@ -1,0 +1,45 @@
+.subscribtion {
+    background-color: #aaa;
+    width: 500px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+
+.subscribtion__field {
+    display: flex;
+}
+
+.subscribtion__field:nth-child(n + 2) {
+    margin-top: 15px;
+}
+
+.subscribtion__field input {
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+.subscribtion__field input:invalid {
+    border-bottom-color: red;
+}
+.subscribtion__field input:focus {
+    border-bottom-color: blue;
+}
+
+
+.subscribtion__submit {
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none; 
+}
+
+input[type="button"]:disabled {
+    opacity: 0.5;
+
+}
